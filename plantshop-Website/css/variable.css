@@ -1,0 +1,11 @@
+:root {
+    --display-text: 'Poppins', 'Times New Roman', serif;
+    --body-text: 'Lora', 'Times New Roman', serif;
+    --subheading: 'PoppinsLight', 'Times New Roman', serif;
+    --primary: #602783;
+    --secondary: #D0BA86;
+    --base-dark: #3B7E71;
+    --base-light: #D2EAE5;
+    --light: #FCFBF8;
+    --dark: #1D180B;
+}

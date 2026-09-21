@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+    font-family: var(--body-text);
+    line-height: 1.5;
+    color: var(--dark);
+
+
+}
+
+/* body {
+    position: absolute;
+} */
+
+section,
+.hero-content {
+    padding: 1rem;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.5rem;
+    /* border: 1px solid tomato; */
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+.subheading {
+    font-family: var(--subheading);
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--display-text);
+    letter-spacing: -1;
+    line-height: 1.2;
+}
+
+/* Abstände */
+/* Horizontal */
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.px-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.px-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.px-5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+/* Vertikal */
+/* Vertikal */
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.py-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Bilder responsiv */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Schriftformatierung */
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* grid */
+.grid {
+    display: grid;
+}
+
+/* Links */
+a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--display-text);
+    font-size: 1.5rem;
+
+}
+
+.btn {
+    padding: 1rem 0.8rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: 0.8rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:hover,
+.btn:hover {
+    filter: brightness(80%);
+    text-decoration: underline;
+}
+
+a:has(i) {
+    line-height: 0;
+
+}
+
+/* Icons */
+i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
+
+.hamburger i {
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 90%;
+    }
+}

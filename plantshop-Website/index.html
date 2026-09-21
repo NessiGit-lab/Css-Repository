@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantshop Website</title>
+    <meta name="description" content="Pflanzenshop für Zimmerpflanzen">
+    <meta name="author" conten="Vanessa Kollburg">
+    <link rel="icon" type="image/x-icon" href="images/leaf-1svg.svg">
+    <meta name="robots" contents="index,follow">
+    <link rel="stylesheet" href="assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/variable.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="flex align-center px-2 py-1">
+            <img src="images/leaf-1.png" alt="Blatt Logo">
+            <ul class="flex">
+                <li><a href="#about">Über Uns</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#shop">Shops</a></li>
+                <li><a href="#newsletter">Blog</a></li>
+
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="bi bi-search"></i></a>
+                <a href="#"><i class="bi bi-cart"></i></a>
+                <a href="#"><i class="bi bi-heart"></i></a>
+            </div>
+            <button class="hamburger" onclick="openNav()">
+                <a href="#"><i class="bi bi-list"></i></a>
+            </button>
+        </nav>
+        <!-- Overlay -->
+        <div id="myNav" class="overlay display-none px-2 py-2">
+            <button class="closebtn" onclick="closeNav()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="overlay-content flex">
+                <ul class="flex">
+                    <li><a href="#about">Über Uns</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#shop">Shops</a></li>
+                    <li><a href="#newsletter">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hero-content flex justify-center align-center">
+            <div class="cta flex">
+                <div class="cta-text flex">
+                    <div>
+                        <h1 id="titel-der-website">Naturzuhause</h1>
+                        <p class="subheading">Natürlich schön wohnen</p>
+                    </div>
+                    <p>
+                        Willkommen bei Naturzuhause – Ihrem Experten für stilvolle und pflegeleichte Hauspflanzen.
+                        Entdecken
+                        Sie unsere vielfältige Auswahl und bringen Sie die Schönheit der Natur in Ihr Zuhause!
+                    </p>
+                </div>
+                <a href="#" class="btn btn-secondary align-center">
+                    Mehr Erfahren
+                    <i class="bi bi-arrow-down"></i>
+                </a>
+            </div>
+            <div>
+                <img src="images/naturzuhause-hero.png" alt="Dekoratives Pflanzenbild">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- <section class="hero flex justify-center align-center">
+            <div class="cta flex px-3 py-3">
+                <div>
+                    <div class="cta-text flex">
+                        <h1>Naturzuhause</h1>
+                        <h3 class="subheading">Natürlich schön wohnen</h3>
+                        <p class="hero-text">Willkommen bei Naturzuhause- Ihrem Experten für stilvolle und pflegeleichte
+                            Hauspflanzen.
+                            Entdecken sie unsere vielfältige Auswahl und bringen Sie die Schönheit der Natur in Ihr
+                            Zuhause!
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Mehr Erfahren <i class="bi bi-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/naturzuhause-hero.png"
+                    alt="Monsterra Plfanze in einem geflochtenen Korb.Links daneben ein Bücherstabel mit einer Sukkulente oben drauf.">
+            </div>
+
+        </section> -->
+        <section class="products flex align-center justify-center py-4">
+            <div class="content-wrapper ">
+                <h2>Featured Products</h2>
+                <div class="card-container grid">
+                    <div class="card-1">
+                        <img src="images/smaragdschatz.jpg" alt="kaktus lehmtopf">
+                        <div class="name-preis flex">
+                            <p>Smaragdschatz</p>
+                            <p>€25</p>
+                        </div>
+                        <a href="#smaragdschatz" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                    <div class="card-2">
+                        <img src="images/dschungeltraum.jpg" alt="kaktus">
+                        <div class="name-preis flex">
+                            <p>Dschungeltraum</p>
+                            <p>€30</p>
+                        </div>
+                        <a href="#dschungeltraum" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                    <div class="card-3">
+                        <img src="images/sonnengruss.jpg" alt="pflanze stiel">
+                        <div class="name-preis flex">
+                            <p>Sonnengruß</p>
+                            <p>€50</p>
+                        </div>
+                        <a href="#sonnengruß" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                    <div class="card-4">
+                        <img src="images/zen-garten.jpg" alt="Zwei Pflanzen">
+                        <div class="name-preis flex">
+                            <p>Zen-Garten</p>
+                            <p>€35</p>
+                        </div>
+                        <a href="#zen-garten" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                    <div class="card-5">
+                        <img src="images/blaetterpoesie.jpg" alt="Überteuert">
+                        <div class="name-preis flex">
+                            <p>Blätterpoesie</p>
+                            <p>€65</p>
+                        </div>
+                        <a href="#blaetterpoesie" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                    <div class="card-6">
+                        <img src="images/gruenes-wunder.jpg" alt="sehr teure sukkulente">
+                        <div class="name-preis flex">
+                            <p>Grünes Wunder</p>
+                            <p>€60</p>
+                        </div>
+                        <a href="#gruenes-wunder" class="btn btn-primary">Zum Produkt</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about flex align-center px-6 py-6">
+            <div class="about-image"><img src="images/naturzuhause-ueber-uns.png" alt="frau beim gärtnern"></div>
+            <div class="about-text flex ">
+                <h2>Über uns</h2>
+                <p>Bei Naturzuhause sind wir davon überzeugt, dass Pflanzen das Wohlbefinden steigern und jedem Raum
+                    eine besondere Atmosphäre verleihen. Unser Ziel ist es, Ihnen hochwertige und pflegeleichte Pflanzen
+                    anzubieten, die Ihrem Zuhause nicht nur eine grüne Note verleihen, sondern auch Ihre Lebensqualität
+                    verbessern.</p>
+                <p>Unser Team besteht aus leidenschaftlichen Pflanzenliebhabern, die über umfangreiches Wissen und
+                    Erfahrung in der Pflege und Auswahl der besten Pflanzen verfügen. Wir wählen unsere Pflanzen
+                    sorgfältig aus und achten darauf, dass sie unter optimalen Bedingungen gedeihen, bevor sie den Weg
+                    zu Ihnen nach Hause finden.</p>
+                <p>Egal, ob Sie ein erfahrener Pflanzenprofi oder ein Anfänger sind, wir stehen Ihnen mit Rat und Tat
+                    zur Seite. Auf unserer Website finden Sie hilfreiche Pflegehinweise und Tipps, damit Ihre Pflanzen
+                    lange gesund und schön bleiben.</p>
+                <p>Mit Naturzuhause möchten wir Ihnen nicht nur Pflanzen, sondern auch ein Stück Natur und Freude in Ihr
+                    Zuhause bringen. Lassen Sie sich von unserer Leidenschaft anstecken und entdecken Sie die Welt der
+                    Hauspflanzen auf eine neue Art und Weise.</p>
+            </div>
+        </section>
+        <section class="image-grid flex justify-center py-6">
+            <div class="grid">
+                <div class="grid-child-1"><img src="images/grid-image-1.jpg" alt="Bild 1"></div>
+                <div class="grid-child-2"><img src="images/grid-image-2.jpg" alt="Bild 2"></div>
+                <div class="grid-child-3">
+                    <h3>Schöner leben, schöner wohnen</h3>
+                </div>
+                <div class="grid-child-4"><img src="images/grid-image-3.jpg" alt="Bild 4"></div>
+                <div class="grid-child-5"><img src="images/grid-image-4.jpg" alt="Bild 5"></div>
+                <div class="grid-child-6"><img src="images/grid-image-5.jpg" alt="Bild 6"></div>
+                <div class="grid-child-7"><img src="images/grid-image-6.jpg" alt="Bild 7"></div>
+            </div>
+        </section>
+        <section class="contact flex justify-center">
+            <div class="contact-formular flex">
+                <h2>Fragen?</h2>
+                <h3 class="subheading">Nimm Kontakt zu uns auf</h3>
+
+                <form action="" class="form-container flex" id="contact-form">
+                    <div class="formgroup">
+                        <label for="name">Vorname&Nachname</label>
+                        <input type="text" id="name" name="name" placeholder="Vorname & Nachname" required>
+                    </div>
+                    <div class="formgroup">
+                        <label for="email">E-Mail Adresse</label>
+                        <input type="text" id="email" name="email" placeholder="E-Mail Adresse" required>
+                    </div>
+                    <div class="formgroup">
+                        <label for="message">Nachricht</label>
+                        <input type="text" id="message" name="message" placeholder="Ihre Nachricht" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Abschicken<i class="bi bi-send-fill"></i></button>
+                </form>
+            </div>
+            <div class="form-image"><img src="images/naturzuhause-form.jpg" alt="Monsterra blatt"></div>
+        </section>
+    </main>
+
+    <footer class="flex px-6 py-6">
+        <div class="foot-contact flex">
+            <p>Kontakt</p>
+            <address>
+                Frankfurter Tor 93 <br>
+                10243 Berlin
+            </address>
+            <ul>
+                <li><a href="#0191234567" class="telefon">0191 23 45 67</a></li>
+                <li><a href="mailto:info@natur.com">info@natur.com</a> </li>
+            </ul>
+        </div>
+        <div class="recht flex">
+            <p>Rechtliches</p>
+            <a href="#">Datenschutz</a>
+            <a href="#">Impressum</a>
+        </div>
+        <div class="socials">
+            <a aria-label="instagram" href="#"><i class="bi bi-instagram"></i></a>
+            <a aria-label="facebook" href="#"><i class="bi bi-facebook"></i></a>
+            <a aria-label="pinterest" href="#"><i class="bi bi-pinterest"></i></a>
+        </div>
+
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+    </script>
+</body>
+
+</html>
